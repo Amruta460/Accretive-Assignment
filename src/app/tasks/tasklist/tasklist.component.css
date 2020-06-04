@@ -1,0 +1,211 @@
+.body{
+        color:#222;        
+}
+.mainDiv {
+        border-top: 1px solid #a5a5a5cc;
+        border-right: 1px solid #a5a5a5cc;
+}
+.navbar {
+        border-bottom: 1px solid #a5a5a5cc;
+        background-color:#fff !important;
+}
+
+.icondiv {
+       border-left:3px solid #00A5B3;
+       padding:10px; 
+}
+
+.my-todo {
+        font-size:9px;
+        white-space:no-wrap;
+        font-family:Lucida Calligraphy;
+}
+.side-bar-icon {
+        text-align:center;
+}
+
+.lbluser {
+        color:#6D9DAB;
+        font-weight:500;
+}
+.fa-user-circle-o {
+        color:#536083;
+}
+.sidenav {
+        color:#00A5B3;
+         height: 100%;
+         width:5.5%;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        background-color: transparent;
+        border-right: 1px solid darkgrey;
+        border-left:1px solid #a5a5a5cc;
+        overflow-x: hidden;
+        padding-top: 20
+}
+#divtasklist {
+        height: 100%;
+        width:94.5%;
+        position: fixed;
+        margin-left: 78px;
+        padding: 20px 10px;
+        background-color:#FAF9F8;
+        border-right:1px solid #a5a5a5cc;
+  
+}
+.user-label {
+  
+    border-radius: 50%;
+    background-color: #7B67EE;
+    color:white;
+    padding: 6px;
+    margin-bottom:0px;
+}
+
+.no-label {
+    border: 1px solid #545b6280;
+    margin-left: 7px;
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    border-radius: 3px;
+    color: #545b6280;
+    color: black;
+}
+
+.lbltask {
+        font-size: x-large;
+        color: #6099af;
+        font-weight: 500;
+        margin-left:60px;
+}
+
+.navbar-right > li > a {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+#user-icon img{
+        width:20px;
+        margin-right:5px;
+        margin-left:-5px;
+}
+
+#div-task-main{
+        width:90%;
+        margin:0px 10px 10px 25px;
+        background-color:#FAFBFD;
+        padding-right: 20px;
+        padding-bottom: 2px;
+
+}
+#div-table{
+        background-color:#fff;
+          font-size:13px;
+}
+
+.task-table tr th, #last-row{
+        background-color:#FAFBFD;
+        border-top:0px;
+        font-weight:normal !important;
+        color:#ccc;
+        border-bottom:hidden;
+        border-left:hidden;
+        border-right:hidden;
+      
+}
+
+#user-detail .fa-lg {
+        line-height:normal !important;   
+
+}
+.task-table tr td{
+       border: none; 
+       
+}
+.fa-align-left ,.fa-bullhorn ,.fa-refresh {
+        color:#545b6280;
+        margin-left: 2px;
+}
+
+.task-table fa{
+  color:#ccc;
+}
+.task-table tr td:first-child{
+       border: none; 
+       text-align:center;
+       color:#ccc;
+       
+}
+.task-table tr {
+   
+box-shadow: 1px 1px 2px 1px #CCCCCC26;
+       
+}
+
+.task-table img{
+     
+    width: 30px;
+    border: 2px solis;
+    border: 1px dashed;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.adduser {
+
+}
+
+:host>>>#notification-icon .popover {
+        
+    transform: none !important;
+    top:45px !important;
+    left:73.5% !important; 
+    box-shadow:3px 2px 5px 2px #cccccc;
+    border:none;
+    border-radius:0 !important;
+}
+
+.navbar-brand img {
+     width:30px;   
+     margin-bottom: 5px;
+
+}
+
+:host>>>#notification-icon .popover .popover-body{
+    padding: 0px .75rem !important;
+}
+
+:host>>>#notification-icon .arrow {
+        left: 96% !important;
+}
+
+:host>>>#notification-icon .popover{
+        max-width: 350px; 
+        width: 350px; 
+}
+
+:host>>> .notification .row{
+        border-bottom:1px solid #cccccc40;
+        margin-left: -13px !important;
+        margin-right: -13px !important;
+        padding:10px 0;
+}
+:host>>> .notification .avtar img{
+        width:35px;
+        margin-top:5px;
+}
+:host>>> .notification .information .line2{
+        color:#999;
+}
+:host>>> #notification-footer .row{
+        margin-right:-13px;
+        margin-left:-13px;
+        color:#777;
+        background-color:#ddd;
+ }
+:host>>> #notification-footer .text{
+        margin:-1px !important;
+        padding:4px 15px !important;
+}

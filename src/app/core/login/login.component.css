@@ -1,0 +1,31 @@
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    margin:0 auto;
+   max-width: 900px; 
+    background-color: #EAEAEA;
+    border: 1px solid #CCCCCC;
+    margin-top:8em;
+}
+#login-form {
+margin:0 auto;
+padding:30px;
+}
+
+.register {
+padding-left: 20px;
+font-weight: 500;
+}
+.text-color {
+font-weight: 500;  
+color:black;
+}
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+}

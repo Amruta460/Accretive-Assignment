@@ -1,0 +1,231 @@
+<div class=mainDiv>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="assets/images/robo.jpg"/></a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="nav navbar-nav">
+
+      <label class="lbltask"> MTM : My Task Manager </label>
+      
+    </ul>
+  </div>
+  <div>
+     <ul id="user-detail" class="nav navbar-nav navbar-right">
+        <li><a class="lbluser" href="#">Hemant Bafna</a></li>
+        <li><a href="#" id="user-icon"><i class="fa fa-user-circle-o fa-lg"  ></i></a></li>
+       <li id="notification-icon"><i class="fa fa-bell-o fa-lg" [ngbPopover]="popContent" ></i></li>
+      
+      </ul>
+</div>
+
+</nav>
+
+<div id="container">
+  <div class="sidenav">
+ <div class="icondiv">
+  <div class="side-bar-icon" ><i class="fa fa-list fa-lg"></i></div>
+  <div class="my-todo">My TODOs</div>
+  </div>
+  </div>
+    <div id="divtasklist"> 
+    <div id="div-task-main">
+
+    <div id="div-table">
+    <table class="table  table-sm task-table">
+    
+    <tr >
+        <th></th>
+        <th></th>
+        <th>UPDATED</th>
+        <th>ASSIGNEE</th>
+        <th>...</th>
+      </tr>
+    
+    <tbody>
+      
+      <tr>
+         <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>This task is assigned! <i class="fa fa-align-left" aria-hidden="true"></i></td>
+        <td>Dec 17</td>
+        <td colspan="2"> <label class="user-label" >AN</label></td>
+        
+      </tr>
+      <tr>
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>Recurring task: this task will restart when closed 
+        <i class="fa fa-align-left" aria-hidden="true"></i>
+        <i style="margin-left: 7px;" class="fa fa-refresh" aria-hidden="true"></i> </td>
+        <td>Dec 17</td>
+        <td colspan="2"><label class="user-label" >AN</label></td>
+        
+      </tr>
+      <tr>
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>Hello, assigned comments! 
+        <ngx-emoji [emoji]="{ id: 'wave', skin: 3 }" size="18"></ngx-emoji>
+        <i class="fa fa-align-left ml-2" aria-hidden="true"></i></td>
+        <td>Dec 17</td>
+        <td colspan="2"><img class="adduser" src="assets/images/add-user.png"/></td>
+        
+      </tr><tr>
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>Task linking and mentioning 
+        <ngx-emoji [emoji]="{ id: 'link', skin: 3 }" size="18"></ngx-emoji>
+        <i class="fa fa-align-left ml-2" aria-hidden="true"></i></td>
+        <td>Dec 17</td>
+        <td colspan="2"><img  class="adduser" src="assets/images/add-user.png"/></td>
+        
+      </tr>
+      <tr>
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>Multitask Toolbar:Magically manage mutilple tasks 
+        <ngx-emoji [emoji]="{ id: 'loudspeaker', skin: 3 }" size="18"></ngx-emoji> 
+        <i class="fa fa-align-left ml-2" aria-hidden="true"></i></td>
+        <td>Dec 17</td>
+        <td colspan="2"><img class="adduser" src="assets/images/add-user.png"/></td>
+        
+      </tr>
+      <tr>
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>View ALL tasks, in one view. <i class="fa fa-align-left" aria-hidden="true"></i></td>
+        <td>Dec 17</td>
+        <td colspan="2"><img  class="adduser" src="assets/images/add-user.png"/></td>
+        
+      </tr>
+        <tr>
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>Sort and Filter your taks <i class="fa fa-align-left" aria-hidden="true"></i> <label class="no-label">1</label> </td>
+        <td>Dec 17</td>
+        <td colspan="2"><img class="adduser" src="assets/images/add-user.png"/></td>
+        
+      </tr>
+        <tr>
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>Add awesome integrations!  <i class="fa fa-align-left" aria-hidden="true"></i> <label class="no-label">7</label></td>
+        <td>Dec 17</td>
+        <td colspan="2"><img class="adduser" src="assets/images/add-user.png"/></td>
+        
+      </tr>
+        <tr>     
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>Checkout out these Checklists! <i class="fa fa-align-left ml-2" aria-hidden="true"> <i class="fa fa-check-square-o ml-2" aria-hidden="true"></i> 0/8</i></td>
+        <td>Dec 17</td>
+        <td colspan="2"><img class="adduser" src="assets/images/add-user.png"/></td>
+        
+      </tr>
+        <tr>
+        <td><i class="fa fa-check" aria-hidden="true"></i></td>
+        <td>Look at the bottom of screen! This task in your Task Tray <i class="fa fa-align-left ml-2" aria-hidden="true"></i></td>
+        <td>Dec 17</td>
+        <td colspan="2"><img class="adduser" src="assets/images/add-user.png"/></td>
+        
+      </tr>
+      <tr id="last-row">
+        <td>+</td>
+        <td colspan="4">Create new task</td>
+        
+      </tr>
+
+    </tbody>
+  </table>
+  <div>
+    </div>
+    </div>
+
+<ng-template #popContent>
+<div>
+<div class="row">
+<div class="col-md-12">
+
+
+
+
+<div class="notification">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="avtar"><i class="fa fa-user fa-3x" aria-hidden="true"></i>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="information">
+          <div class="line1">Created Ticket 72 - Attachment test</div>
+          <div class="line2">on 15 Dec 2016 at 17:04</div>
+      </div>
+    </div>  
+  </div>
+</div>
+<div class="notification">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="avtar"><img src="assets/images/avtar.png"/>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="information">
+          <div class="line1">Dan wentworth created ticket 70 -</div>
+          <div class="line2 ml-1">
+          <ngx-emoji [emoji]="{ id: 'smiley', skin: 3 ,emoticons: ['=)','=-)']}" size="18"></ngx-emoji>
+
+          <ngx-emoji [emoji]="{ id: 'grinning', skin: 3 }" size="18"></ngx-emoji>
+
+          <ngx-emoji [emoji]="{ id: 'joy', skin: 3 }" size="18"></ngx-emoji>  
+
+          <ngx-emoji [emoji]="{ id: 'partyPopper', skin: 3 }" size="18"></ngx-emoji>
+          </div>
+          <div class="line2">on 15 Dec 2016 at 9:44</div>
+      </div>
+    </div>  
+  </div>
+</div>
+<div class="notification">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="avtar"><img src="assets/images/avtar.png"/>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="information">
+          <div class="line1">Dan wentworth created ticket 71 -</div>
+          <div class="line2">ticket with taga</div>
+          <div class="line2">on 7 Dec 2016 at 15:10</div>
+      </div>
+    </div>  
+  </div>
+</div>
+<div class="notification">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="avtar"><img src="assets/images/avtar.png"/>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="information">
+          <div class="line1">Dan wentworth created ticket 70 - </div>
+          <div class="line2">Ticket with tags</div>
+           <div class="line2">on 07 Dec 2016 at 15:09</div>
+
+      </div>
+    </div>  
+  </div>
+</div>
+
+
+<div id="notification-footer">
+  <div class="row">
+    <div class="col-md-10 text">
+        <label>View all notifications</label>
+    </div>
+    <div class="col-md-2 text" >
+        <i class="fa fa-cog" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>
+</ng-template>
+
+
+<div>
+</div>   
